@@ -1,0 +1,50 @@
+
+@media screen and (max-width: 550px) {
+    /* 
+    Shrink down some of the fonts and logo
+    Remove the splash image of HTML code
+    Make single column for projects
+    */
+    body {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em
+    }
+
+    .splash-img {
+        display: none;
+    }
+    
+    .logo {
+        width: 80px;
+    }
+
+    .featured-item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    /* Move to two columns */
+    .featured-item {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    /* Move to three columns */
+    .featured-item {
+        width: 31%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /* fix the width to 1000px */
+    body, main {
+        width: 960px;    /* 1000 - 40 to account for margins */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
